@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" >
+    <title>Kursayin</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" ></script>
+</head>
+<body>
+    <h1 style="text-align: center" >Տրված է n բնական թիվը: Որոշել x<sup>2</sup> + y<sup>2</sup> < n անհավասարության լուծումների քանակը և x, y-ի արժեքները բնական թվերում</h1>
+    <div style="display: flex; justify-content: space-between" >
+        <div>
+            <a href="./screens/login.html">Մուտք գործել համակարգ</a>
+            <br>
+            <br>
+            <br>
+            <div>
+                <label for="numberX">X: </label>
+                <input id="numberX" type="number" placeholder="Խնդրում ենք ներմուծել X-ը">
+            </div>
+            <div>
+                <label for="numberY">Y: </label>
+                <input id="numberY" type="number" placeholder="Խնդրում ենք ներմուծել Y-ը">
+            </div>
+            <div>
+                <label for="numberN">N: </label>
+                <input id="numberN" type="number" placeholder="Խնդրում ենք ներմուծել N-ը">
+            </div>
+            <button onclick="solutionsCount()" >Հաստատել</button>
+            <div id="result-wrapper">
+
+            </div>
+        </div>
+        <div id="right-section-wrapper" style="width: 300px" >
+            <div style="width: 200px" >
+                <img src="./images/code-img.jpg" alt="" style="max-width: 100%">
+            </div>
+            <p>Տրված է n բնական թիվը: Որոշել x<sup>2</sup> + y<sup>2</sup> < n անհավասարության լուծումների քանակը և x, y-ի արժեքները բնական թվերում</p>
+            <b><p>Միրզոյան Ալեքսանդր Պետրոսի</p></b>
+            <p>
+                <script>
+                    const date = new Date();
+                    const day = date.getDate();
+                    const month = date.getMonth() + 1;
+                    const year = date.getFullYear();
+                    document.write(`${day}.${month}.${year}թվ`);
+                </script>
+            </p>
+            <div id="animation-wrapper" >
+                <div id="first-box" ></div>
+                <div id="second-box" ></div>
+                <div id="third-box" ></div>
+            </div>
+        </div>
+    </div>
+    <script>
+      hideElementAfterSomePeriod("right-section-wrapper", 15000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Profile</title>
+    <script src="../script.js" ></script>
+</head>
+<body>
+    <header>
+        <ul>
+            <li>
+                Տրված է n բնական թիվը: Որոշել x<sup>2</sup> + y<sup>2</sup> < n անհավասարության լուծումների քանակը և x, y-ի արժեքները բնական թվերում
+            </li>
+            <li>
+                <a href="./advices.html">Օրվա խորհուրդներ</a>
+            </li>
+            <li>
+                <a href="./help.html">Օգնության պատուհան</a>
+            </li>
+            <li><a href="./about.html">Հեղինակ</a></li>
+            <li
+                onclick="handleLogout()"
+                style="text-decoration: underline; color: blue; cursor: pointer"
+            >
+                Ելք
+            </li>
+        </ul>
+    </header>
+    <h1>Օգտատիրոջ տվյալներ</h1>
+    <input id="username" disabled type="text" value="">
+    <input id="password" disabled type="password" value="" >
+    <script>
+      getInputValues();
+    </script>
+</body>
+</html>
