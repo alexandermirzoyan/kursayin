@@ -41,7 +41,7 @@ const authorizeUser = () => {
   if (inputtedUsername === correctUsername && inputtedPassword === correctPassword) {
     localStorage.setItem("username", correctUsername);
     localStorage.setItem("password", correctPassword);
-    window.location.href = "file:///C:/Alexandr/kursayin/screens/user.html";
+    window.location.href = "./user.html";
   }
   else {
     alert("Wrong username or password");
